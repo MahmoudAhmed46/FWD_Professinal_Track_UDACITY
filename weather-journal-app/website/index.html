@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Journal</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a83dba7890.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="holder headline">
+      <h1>Weather Journal App <span><i class="fas fa-cloud-sun-rain"></i></span></h1>
+    </div>
+    <div class="holder zip">
+      <label for="zip">Enter Zipcode here</label>
+      <input type="text" id="zip" placeholder="enter zip code here"><br>
+      <span class="error"></span>
+    </div>
+    <div class="holder feel">
+      <label for="feelings">How are you feeling today?</label>
+      <textarea class="myInput" id="feelings" placeholder="Enter your feelings here" rows="6" cols="34"></textarea>
+      <button id="generate" type="submit"> Generate </button>
+    </div>
+    <div class="holder entry">
+      <div class="title">Most Recent Entry</div>
+      <div id="entryHolder">
+        <span style="padding: 5px;margin-right: 5px;"><i class="fas fa-calendar-week icons"></i></span>
+        <div id="date"></div>
+        <span style="padding: 5px;margin-right: 5px;"><i class="fas fa-thermometer-half icons"></i></span>
+        <div id="temp"></div>
+        <span style="padding: 5px;margin-right: 5px;"><i class="fas fa-heart icons"></i></span>
+        <div id="content"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
